@@ -43,11 +43,14 @@ Example data:
 Sample output:
 
 Employee #1 ID: 1
+
 Employee #2 ID: 2
+
 Time together: 1784 days.
 
 
 DateTo can accept value „NULL“ (this is equal to „today“).
+
 The input data must be loaded to the program from a CSV file.
 
 The application has a simple UI - The user picks up a file from the file system and, after selecting it, all common projects of the pair are displayed with the following columns:
