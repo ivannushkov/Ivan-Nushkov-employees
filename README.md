@@ -1,11 +1,20 @@
+# Employeees
 An application that identifies the pair of employees who have worked together on common projects for the longest period of time.
 
 It's given a CSV file with data in the following format:
 
-EmpID, ProjectID, DateFrom, DateTo 
+*EmpID, ProjectID, DateFrom, DateTo*
 
+#
 
-Example data:
+- DateTo can accept value „NULL“ (this is equal to „today“).
+- The input data must be loaded to the program from a CSV file.
+- The application has a simple UI - The user picks up a file from the file system and, after selecting it, all common projects of the pair are displayed with the following columns:
+
+*Employee ID #1, Employee ID #2, Project ID, Days worked*
+# 
+
+**Example data:**
 
 1, 1, 2019-07-04, 2020-08-14
 
@@ -40,20 +49,10 @@ Example data:
 5, 5, 2018-08-04, NULL
 
 
-Sample output:
+**Sample output:**
 
-Employee #1 ID: 1
+*Employee #1 ID: 1*
+*Employee #2 ID: 2*
+*Time together: 1784 days.*
 
-Employee #2 ID: 2
-
-Time together: 1784 days.
-
-
-DateTo can accept value „NULL“ (this is equal to „today“).
-
-The input data must be loaded to the program from a CSV file.
-
-The application has a simple UI - The user picks up a file from the file system and, after selecting it, all common projects of the pair are displayed with the following columns:
-
-Employee ID #1, Employee ID #2, Project ID, Days worked
 
