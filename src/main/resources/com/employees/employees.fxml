@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.employees.Controller"
+            fx:id="borderPane">
+
+    <top>
+        <MenuBar>
+            <Menu text="Menu">
+                <MenuItem text="Choose File" onAction="#loadTeams"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TableView fx:id="bestTeamTable">
+            <columns>
+                <TableColumn text="Employee ID #1" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="employeeOneId"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Employee ID #2" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="employeeTwoId"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Project ID" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="projectId"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Days worked" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="duration" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
